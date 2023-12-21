@@ -1,0 +1,18 @@
+use id21095776_homesify;
+CREATE TABLE sellers (
+    id INT(12) NOT NULL AUTO_INCREMENT,
+    firstname VARCHAR(255) NOT NULL,
+    lastname VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phonenum VARCHAR(11) NOT NULL,
+    password VARCHAR(15) NOT NULL,
+    document VARCHAR(255) NOT NULL DEFAULT "",
+    package VARCHAR(15) NOT NULL DEFAULT "NONE",
+    tot_props VARCHAR(15) NOT NULL DEFAULT "0",
+    tot_sales VARCHAR(15) NOT NULL DEFAULT "0",
+    tot_rev VARCHAR(15) NOT NULL DEFAULT "0",
+    account_status VARCHAR(15) NOT NULL DEFAULT "NOT VERIFIED",
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(id),
+    UNIQUE(email)
+);

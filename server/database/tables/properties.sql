@@ -1,0 +1,19 @@
+USE id21095776_homesify;
+CREATE TABLE properties (
+	id INT(12) NOT NULL AUTO_INCREMENT,
+	name VARCHAR(255) NOT NULL,
+	description TEXT NOT NULL,
+	type VARCHAR(15) NOT NULL,
+	color VARCHAR(255) NOT NULL,
+	num_rooms VARCHAR(15) NOT NULL,
+	num_bathrooms VARCHAR(15) NOT NULL,
+	num_toilets VARCHAR(15) NOT NULL,
+	num_kitchens VARCHAR(15) NOT NULL,
+	num_plots VARCHAR(15) NOT NULL,
+	location VARCHAR(255) NOT NULL,
+	price VARCHAR(15) NOT NULL,
+	filename VARCHAR(255) NOT NULL,
+	created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY(id),
+	UNIQUE(type)
+);
